@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --cor0: #3067D1;
+    --cor1: #0217FA;
+    --cor2: #3E437A;
+    --cor3: #363850;
+    --cor4: #16161B;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bree Serif", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor3));
+    font-family: var(--fonte-destaque);
+
+}
+
+.ini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    transform: translate(0, 200px);
+}
+
+fieldset {
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    width: 400px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.623);
+}
+
+legend {
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid dodgerblue;
+    background-color: var(--cor1);
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 15%;
+    
+}
+
+input[type=submit]{
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 135px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover{
+    background-color: #0217FA;
+    color: white;
+    width: 140px;
+    height: 50px;
+    border: 2px solid white;
+}

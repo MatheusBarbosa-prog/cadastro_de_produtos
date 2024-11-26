@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --cor0: #3067D1;
+    --cor1: #0217FA;
+    --cor2: #3E437A;
+    --cor3: #363850;
+    --cor4: #16161B;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bree Serif", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    background-color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px ;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.623);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+section#login {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.567);
+    
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #0217FA;
+    border: 2px solid #0217FA;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 1.3em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 43px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translate(44px, -31px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+
+form > input[type=submit]{
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #3067D1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #3E437A;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #3067D1;
+    border: 1px solid #3067D1;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #3E437A;
+    color: white;
+}
+
+form > a.botao > span {
+    font-size: 0.9em;
+}
+
+footer {
+    background-color: #0217FA;
+    color: white;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+}    

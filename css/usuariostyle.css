@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --cor0: #3067D1;
+    --cor1: #0217FA;
+    --cor2: #3E437A;
+    --cor3: #363850;
+    --cor4: #16161B;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bree Serif", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor3));
+    font-family: var(--fonte-destaque);
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 40px;
+    text-shadow: 15px 10px 10px black;
+}
+
+main {
+    min-width: 300px;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main > h2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.445);
+}
+
+div#tab {
+    overflow-x: auto;
+}
+
+main > div#tab > table.tabela, th, tr, td {
+    background-color: rgba(0, 0, 0, 0.274);
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    margin: 0 auto;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.567);
+}

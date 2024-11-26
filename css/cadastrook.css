@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --cor0: #3067D1;
+    --cor1: #0217FA;
+    --cor2: #3E437A;
+    --cor3: #363850;
+    --cor4: #16161B;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bree Serif", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-destaque);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+
+    min-width: 300px;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.623);
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+
+    background-color: var(--cor4);
+    padding: 5px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.267);
+}
+
+nav > a {
+    flex: auto;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+div.campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 25%);
+}
+
+fieldset {
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    height: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid;
+    box-shadow: 1px 1px 1px 5px rgba(0, 0, 0, 0.342);
+}
+
+fieldset > h2 {
+    margin-bottom: 50px;
+}
+
+h2 > span {
+    color: green;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+fieldset > a {
+    text-decoration: none;
+    color: white;
+}
+
+fieldset > a > span {
+    font-size: 1.5em;
+}
+
+fieldset > p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+fieldset > p > a {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+fieldset > p > a:visited {
+    color: darkcyan;
+    text-decoration: none;
+}
+
